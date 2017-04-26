@@ -20,7 +20,13 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "reviewer": {
+      "type": "belongsTo",
+      "model": "Reviewer",
+      "foreignKey": "publisherId"
+    }
+  },
   "acls": [],
   "methods": {}
 }
